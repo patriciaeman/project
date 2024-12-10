@@ -1,0 +1,106 @@
+/* style.css */
+
+/* Reset styles (removes default browser margins and paddings) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall page style */
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "section aside"
+        "footer footer";
+    grid-template-columns: 2fr 1fr; /* Two parts for main section, one for aside */
+    grid-template-rows: auto auto 1fr auto; /* Adjust heights of rows */
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* Header styling */
+header {
+    grid-area: header;
+    background-color:#FFFFFF;
+    padding: 10px;
+    text-align: center;
+    color: #56b482;
+}
+
+
+/* Navigation bar styling */
+nav {
+    grid-area: nav;
+    background-color: #4d77a7;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+section {
+    grid-area: section;
+    background-color: #D3D3D3; 
+    padding: 10px;
+}
+
+article {
+    margin-top: 10px;
+    background-color: #D3D3D3;
+    padding: 10px;
+
+}
+
+
+#form-container {
+    margin-top: 10px;
+    background-color: #D3D3D3;
+    padding: 10px;
+    
+}
+
+/* Sidebar (aside) styling */
+aside {
+    grid-area: aside;
+    background-color: #D3D3D3;
+    padding: 10px;
+}
+
+
+
+/* Footer styling */
+footer {
+    grid-area: footer;
+    background-color: #56b482;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+footer img{
+    height: 100px;
+    width: 200px;
+}
+
+#logo-image{
+width: 200px;
+height:auto;
+border:2px;
+float: right;
+}
